@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    width: 100%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.labelHeader {
+    flex-grow: 1;
+    margin-left: 50px;
+}
+
+.search {
+    padding-right: 10px;
+}
+.nav_menu {
+    height: 100%;
+}
+
+.nav_menu li {
+    list-style: none;
+}
+
+.sidebar {
+    height: 200px;
+    padding: 10px;
+    justify-items: center;
+}
+
+.card-columns {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.pagination-container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.content {
+    margin: 20px 10px 10px 0;
+}
+.choose_table {
+    width: 100%;
+    padding: 10px;
+}
+.btn_choose li {
+    margin-right: 5px;
+}
+.card-img-top {
+    max-width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 20px;
+    border: none; /* Khung bao quanh */
+    border-radius: 10px; /* Bo góc */
+    padding: 20px; /* Khoảng cách bên trong */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bóng đổ */
+}
+.table th {
+    background-color: #dcdcdc;
+    color: #a1a3a3;
+    padding: 10px;
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.pagination-container {
+    display: flex; /* Sử dụng flexbox để căn chỉnh nút */
+    justify-content: center; /* Căn giữa */
+    gap: 10px; /* Khoảng cách giữa các nút */
+    margin-top: 20px; /* Khoảng cách trên */
+}
+
+body{
+    padding: 2rem;
+    background-color: #f5f1f1;
+}
+
+#prev-btn, #next-btn{
+    background-color: #bd965f;
+}
+
+.rounded-button {
+    border-radius: 10px;
+}
+
+.table-hover {
+    border-collapse: collapse;
+    border: 2px solid #bd965f; /* Đường viền xung quanh bảng */
+    border-radius: 10px; /* Bo tròn góc của bảng */
+    overflow: hidden; /* Để bo tròn hoạt động */
+}
+.table-hover thead th {
+    border: none; /* Không có đường viền trên các ô tiêu đề */
+}
+.table-hover tbody td {
+    border: none; /* Không có đường viền cho các ô */
+}
+.table-hover {
+    margin: 20px 0; /* Khoảng cách trên và dưới bảng */
+}
+
+.custom-navbar {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.home-btn, .search-btn {
+    background-color: #b38b57;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.date-input {
+    width: 150px;
+}
+
+.text-center {
+    margin: 20px 0;
+    color: #333;
+}
+
+.custom-table th, .custom-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination-btn {
+    background-color: #b38b57;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.page-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.total-pages {
+    font-weight: bold;
+}
+
+.btn-outline-success {
+    border-radius: 10px; /* Bo tròn nút tìm kiếm */
+}
+
+#color{
+    background-color: #bd965f;
+}
+
+
+.no-border {
+    border: none;  /* Xóa đường viền */
+    outline: none; /* Xóa outline nếu có */
+}
+
+.btn-secondary {
+    border-top: none;  /* Xóa đường viền trên */
+    border-bottom: none; /* Xóa đường viền dưới */
+}
+
+
+.text-black{
+    color: black;
+}
+form {
+    display: flex; /* Đảm bảo tất cả nằm trên cùng một hàng */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.form-control {
+    width: auto; /* Đặt chiều rộng tự động */
+}
+
+input.form-control:focus {
+    border-color: #bd965f; /* Màu viền nâu */
+    outline: none; /* Bỏ viền mặc định */
+    box-shadow: 0 0 5px rgba(189, 150, 95, 0.5); /* Thêm hiệu ứng bóng nếu cần */
+}
+
+.table td {
+    text-align: center; /* Căn giữa nội dung theo chiều ngang */
+}
+
+/* customStyles.css */
+
+.btn-search {
+    background-color: #bd965f; /* Set your desired shade of brown */
+    color: white; /* Change text color for better contrast */
+    border: none; /* Remove default border */
+}
+
+/* customStyles.css */
+
+.btn-pagination {
+    background-color: #bd965f; /* Set the desired shade of brown */
+    color: white; /* Change text color for better contrast */
+    border: none; /* Remove default border */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-pagination:hover {
+    background-color: #a76b3d; /* Darker shade for hover effect */
+}
+
+.btn-search {
+    background-color: #bd965f; /* Set the same brown color for the search button */
+    color: white; /* Change text color for better contrast */
+    border: none; /* Remove default border */
+}
+
+.btn-search:hover {
+    background-color: #a76b3d; /* Darker shade for hover effect */
+}
+/* customStyles.css */
+.container .btn-pagination {
+    background-color: #a76b3d;
+    color: white;
+    border: none;
+}
+
+.container .btn-pagination:hover {
+    background-color: #a76b3d; /* Darker shade on hover */
+}
+
+

@@ -1,0 +1,651 @@
+/* Tổng quan container */
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(90deg, #5d4037, #795548); /* Gradient màu cà phê */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navList li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navList li a:hover {
+    color: #d7ccc8; /* Màu nâu nhạt hơn khi hover */
+}
+
+/* Phần giới thiệu */
+.intro {
+    flex: 1;
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #eeeeee; /* Màu cà phê đậm */
+}
+
+.intro p {
+    font-size: 1.1em;
+    color: #eeeeee;
+}
+
+/* Footer */
+.footer {
+    background: #5d4037; /* Màu cà phê đậm */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerLogo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.socialIcons a {
+    color: white;
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+.socialIcons a:hover {
+    color: #d7ccc8; /* Màu nâu nhạt hơn khi hover */
+    transform: scale(1.2);
+}
+
+
+/* Tổng quan Card Container */
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Card sản phẩm */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Hiệu ứng hover cho Card */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hình ảnh sản phẩm */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.navList li a:hover {
+    color: #3e2723;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* Thông tin sản phẩm */
+.card h3 {
+    font-size: 1.4em;
+    color: #5d4037;
+    margin: 15px 0 5px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #777;
+    margin: 0 15px 10px;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #795548;
+    margin-bottom: 20px;
+}
+
+/* Overlay gradient cho hình ảnh khi hover */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+/* Hiệu ứng nhấp nháy nhẹ khi di chuột vào giá */
+.price:hover {
+    color: #d7ccc8;
+    animation: blink 0.7s ease-in-out infinite alternate;
+}
+
+/* Keyframes cho hiệu ứng blink */
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0.7; }
+}
+
+
+/* Container cho phần giới thiệu chủ quán */
+.aboutOwner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f1e7d0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Hình ảnh chủ quán */
+.ownerImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Thông tin về chủ quán */
+.ownerInfo {
+    max-width: 500px;
+}
+
+.ownerInfo h3 {
+    font-size: 1.8em;
+    color: #5d4037;
+    margin-bottom: 10px;
+}
+
+.ownerInfo p {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+/* Container cho phần giới thiệu chủ quán */
+.aboutOwner {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Chia cột: 1 cột nhỏ cho ảnh, 2 cột cho nội dung */
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #f8f1e1; /* Màu nền nhẹ nhàng, sang trọng */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Animation Fade-In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hình ảnh chủ quán */
+.ownerImage {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Hiệu ứng zoom nhẹ khi hover vào hình ảnh */
+.ownerImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Thông tin về chủ quán */
+.ownerInfo {
+    max-width: 500px;
+    line-height: 1.8;
+    color: #5d4037;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hiệu ứng hover cho văn bản: thay đổi màu và phóng to */
+.ownerInfo:hover {
+    color: #8d6e63;
+    transform: translateX(5px);
+}
+
+/* Tên của chủ quán */
+.ownerInfo h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3e2723;
+    transition: color 0.3s ease;
+}
+
+/* Hiệu ứng đổi màu khi hover vào tên chủ quán */
+.ownerInfo h3:hover {
+    color: #8d6e63;
+}
+
+/* Các đoạn văn bản mô tả */
+.ownerInfo p {
+    font-size: 1em;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho các đoạn văn bản */
+.ownerInfo p:hover {
+    color: #6d4c41;
+}
+
+/* Tạo hiệu ứng hover cho toàn bộ phần giới thiệu */
+.aboutOwner:hover {
+    background-color: #f1e7d0; /* Màu nền nhẹ thay đổi khi hover */
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Hiệu ứng cho phần tử tổng thể */
+.aboutOwner:hover .ownerInfo {
+    color: #6d4c41;
+}
+
+
+/* Phần giới thiệu sản phẩm cà phê */
+.intro {
+    position: relative;
+    padding: 40px;
+    background-color: #fff;
+    background-image: url('https://doctormuoi.vn/wp-content/uploads/2021/01/cac-loai-cafe-duoc-yeu-thich.jpg'); /* Đường dẫn ảnh nền */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  /* Màu nền cho phần chính */
+}
+
+/* Tạo ảnh nền cho toàn bộ phần giới thiệu */
+.intro::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://doctormuoi.vn/wp-content/uploads/2021/01/cac-loai-cafe-duoc-yeu-thich.jpg');  /* Thay đường dẫn này với đường dẫn thực tế của ảnh nền bạn muốn sử dụng */
+    background-position: center;
+    background-size: cover;
+    opacity: 0.1;  /* Độ mờ của ảnh nền */
+    z-index: -1;   /* Đặt ảnh nền dưới các phần tử */
+}
+
+/* Card container */
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Các thẻ card */
+.card {
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Ảnh trong thẻ card */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Tiêu đề và giá trong thẻ card */
+.card h3 {
+    margin: 15px 0;
+    font-size: 1.2em;
+    color: #3e2723;
+}
+
+/* Phần giới thiệu về chủ quán */
+.aboutOwner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #f8f1e1;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* Ảnh chủ quán */
+.ownerImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Thông tin về chủ quán */
+.ownerInfo {
+    max-width: 600px;
+    color: #5d4037;
+    font-size: 1.1em;
+}
+
+.ownerInfo h3 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #3e2723;
+}
+
+.ownerInfo p {
+    margin: 10px 0;
+    color: #444;
+}
+
+/* Card container */
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+/* Header container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #3e2723;
+    color: white;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Danh sách điều hướng */
+.navList {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.navList li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.navList li a:hover {
+    color: #f8f1e1;
+}
+
+/* Phần các liên kết đăng nhập, đăng ký, hỗ trợ, thông báo */
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.authLink, .supportLink, .notificationLink {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.authLink:hover, .supportLink:hover, .notificationLink:hover {
+    color: #f8f1e1;
+}
+
+.authLink {
+    font-weight: bold;
+}
+
+/* Phần Slider Giảm Giá */
+.discountSlider {
+    padding: 40px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.discountSlider h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Slider container */
+/* Slider container */
+.slider {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 500px; /* Đảm bảo chiều cao của slider */
+}
+
+/* Slide items */
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa nội dung trong mỗi slide */
+    min-width: 100%;
+    text-align: center;
+}
+
+/* Style for image */
+.slide img {
+    width: 100%;
+    max-width: 1200px; /* Giới hạn chiều rộng hình ảnh */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Heading */
+.slide h3 {
+    font-size: 1.5em;
+    color: #3e2723;
+    margin-top: 10px;
+}
+
+/* Paragraph */
+.slide p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 5px;
+}
+
+
+/* Thêm các hiệu ứng khi hover */
+.slider:hover {
+    cursor: pointer;
+}
+
+/* slider */
+.slider {
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.slide {
+    flex: 1;
+    transition: transform 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.brandStorySection {
+    padding: 50px;
+    background-color: #f8f1e1;
+    text-align: center;
+    opacity: 0; /* Ban đầu phần tử không hiển thị */
+    transform: translateY(50px); /* Di chuyển xuống dưới */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Khi cuộn vào sẽ thay đổi opacity và vị trí */
+}
+
+.brandStoryContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.imageSection {
+    flex: 5;
+}
+
+.contentSection {
+    flex: 7;
+    opacity: 0;
+    transform: translateX(50px); /* Di chuyển từ phải sang trái */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Hiệu ứng chuyển động mượt mà */
+}
+
+.contentSection h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #3e2723;
+}
+
+.contentSection p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Khi phần tử vào trong màn hình */
+.inView .brandStorySection,
+.inView .contentSection {
+    opacity: 1; /* Hiển thị phần tử */
+    transform: translateX(0); /* Trả về vị trí ban đầu */
+}
+
+/* Thêm hiệu ứng khi contentSection vào trong màn hình */
+.inView .brandStorySection {
+    transform: translateY(0); /* Di chuyển lên khi vào tầm nhìn */
+}
+
+.inView .contentSection {
+    transform: translateX(0); /* Trả về vị trí khi cuộn vào */
+}
+

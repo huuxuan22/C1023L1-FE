@@ -1,0 +1,588 @@
+.loginContainer {
+  display: grid;
+  place-items: center; /* Căn giữa theo cả chiều ngang và dọc */
+  height: 120vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.loginBox {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 500px;
+  position: absolute; /* Thay đổi từ fixed sang absolute */
+  top: 50%; /* Đặt nó ở giữa màn hình */
+  left: 50%;
+  transform: translate(-50%, -30%); /* Căn giữa hoàn toàn */
+  z-index: 10; /* Đảm bảo nó luôn nằm trên các phần tử khác */
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #bd965f; /* Màu chủ đạo: vàng nâu */
+  font-size: 30px;
+}
+
+.formGroup {
+  margin-bottom: 10px;
+}
+
+.inputGroup {
+  margin-bottom: 5px;
+}
+
+/* .formGroup label,
+.inputGroup label {
+display: block;
+text-align: left;
+color: #a1a3a3; 
+} */
+
+.formGroup input,
+.inputGroup input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a1a3a3; 
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+.formGroup input:focus,
+.inputGroup input:focus {
+  border-color: #bd965f; /* Đổi màu viền khi focus */
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 12px;
+  width: 100%;
+  background-color: #bd965f; /* Màu nút chính */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #a17c4d; /* Hiệu ứng hover cho nút chính */
+  transform: translateY(-2px);
+}
+
+.socialLogin {
+  margin-top: 30px;
+}
+
+.socialBtn {
+  padding: 12px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.socialBtn:hover {
+  opacity: 0.85;
+}
+
+.googleBtn {
+  background-color: #db4437; /* Màu cho nút Google */
+}
+
+.facebookBtn {
+  background-color: #3b5998; /* Màu cho nút Facebook */
+}
+
+.registerLink {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.registerLink p {
+  color: #888;
+  font-size: 14px;
+}
+
+.registerBtn {
+  color: #bd965f;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.registerBtn:hover {
+  color: #a17c4d; /* Hiệu ứng hover cho nút Đăng ký */
+}
+
+.errorsMessage {
+  display: block;
+}
+
+.showErrors {
+  font-size: 15px;
+  transform: translateX(5%);
+  display: block;
+  text-align: left;
+  color: rgb(208, 99, 99);
+  margin-top: 5px;
+  opacity: 0; 
+  animation: fadeIn 0.3s forwards; 
+}
+
+.showErrors p {
+  margin-right: 5px;
+  transform: translateX(40%);
+  display: block;
+  text-align: left;
+}
+
+.formInput {
+  display: block;
+  margin-bottom: 0px;
+  height: auto;
+}
+
+.createAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 560px;
+  height: 600px;
+  box-shadow: 0 0 0 0.1rem #f1f4f4;
+}
+
+.formControl {
+  border-color: #ced4da; /* Đặt màu viền mặc định */
+}
+
+.formControl.error {
+  border: 2px solid rgb(208, 99, 99); /* Đường viền màu đỏ khi có lỗi */
+  animation: shake 0.3s ease; /* Hiệu ứng rung lắc */
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Hiển thị thông báo lỗi */
+.showErrors {
+  color: rgb(208, 99, 99);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Loại bỏ màu viền xanh khi focus */
+.formControl:focus {
+  border-color: #ced4da; /* Đặt màu viền khi focus giống như màu viền mặc định */
+  box-shadow: none; /* Loại bỏ bóng đổ mặc định */
+  color: #495057; /* Màu chữ khi focus */
+  background-color: #fff; /* Màu nền khi focus */
+  border-color: rgba(161, 163, 163, 0.5); /* Màu viền khi focus */
+  outline: 0; /* Loại bỏ viền ngoài khi focus */
+  box-shadow: 0 0 0 0.2rem #a1a3a3; /* Bóng đổ khi focus */
+}
+
+.btnSubmit {
+  background-color: #bd965f;
+  border-radius: 0%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 95%;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.last {
+  margin-bottom: 10px;
+}
+
+.fullPage {
+  background-color: #bd965f;
+  min-height: 100vh; /* Đảm bảo chiều cao 100% của màn hình */
+  margin: 0; /* Bỏ khoảng cách mặc định */
+}
+
+/* Hiển thị lỗi */
+.displayErrors {
+  display: block;
+  color: rgb(208, 99, 99);
+  opacity: 1; /* Đảm bảo rằng lỗi hiển thị ngay lập tức */
+  float: left;
+  width: 100%;
+  text-align: left; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #bd965f; /* Màu chủ đạo: vàng nâu */
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Phần tử form group */
+.formGroup {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Input fields */
+.formGroup input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f8f8f8;
+  transition: all 0.3s ease;
+}
+
+.formGroup input:focus {
+  border-color: #bd965f; /* Màu viền khi focus */
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 6px rgba(189, 150, 95, 0.2);
+}
+
+.formGroup input.error {
+  border-color: #d84c3c;
+  background-color: #fce3e3;
+}
+
+.formGroup label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+/* Thông báo lỗi */
+.displayErrors {
+  color: #d84c3c;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+/* Nút đăng nhập */
+.btnSubmit {
+  background-color: #bd965f;
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btnSubmit:hover {
+  background-color: #a17c4d; /* Màu khi hover */
+  transform: translateY(-2px);
+}
+
+/* Các nút đăng nhập xã hội */
+.socialLogin {
+  margin-top: 30px;
+}
+
+.socialBtn {
+  padding: 12px;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.socialBtn:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+.googleBtn {
+  background-color: #db4437;
+}
+
+.facebookBtn {
+  background-color: #3b5998;
+}
+
+/* Hiệu ứng khi hover vào liên kết đăng ký */
+.registerLink {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.registerLink p {
+  color: #888;
+}
+
+.registerBtn {
+  color: #bd965f;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.registerBtn:hover {
+  color: #a17c4d;
+  text-decoration: underline;
+}
+
+/* Các hiệu ứng cho các lỗi */
+.errorsMessage {
+  display: block;
+  font-size: 15px;
+  color: rgb(208, 99, 99);
+  animation: fadeInError 0.3s ease-out;
+}
+
+@keyframes fadeInError {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.showErrors {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  color: rgb(208, 99, 99);
+}
+
+/* Nút "Quên mật khẩu" */
+.forgotPasswordLink {
+  color: #888;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-top: 20px;
+}
+
+.forgotPasswordLink:hover {
+  color: #bd965f;
+  text-decoration: underline;
+}
+
+/* Tạo hiệu ứng cho các phần tử lỗi */
+.formInput {
+  display: block;
+  margin-bottom: 0px;
+  height: auto;
+  position: relative;
+}
+
+.createAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 560px;
+  height: 600px;
+  box-shadow: 0 0 0 0.1rem #f1f4f4;
+}
+
+.formControl {
+  border-color: #ced4da;
+}
+
+.formControl.error {
+  border: 2px solid rgb(208, 99, 99);
+  animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Hiển thị thông báo lỗi */
+.showErrors {
+  color: rgb(208, 99, 99);
+}
+
+.fullPage {
+  background-color: #bd965f;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.displayErrors {
+  display: block;
+  color: rgb(208, 99, 99);
+  opacity: 1;
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+
+.inputWithIcon {
+  position: relative;
+  width: 100%;
+}
+
+.inputWithIcon .inputIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a1a3a3;
+  font-size: 18px;
+}
+
+.formControl {
+  padding-left: 35px; /* Đảm bảo có không gian cho biểu tượng */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a1a3a3;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+  text-indent: 10px;
+}
+
+.formControl:focus {
+  border-color: #bd965f;
+  outline: none;
+}
+
+.formControl.error {
+  border: 2px solid rgb(208, 99, 99);
+}
+
+.inputWithIcon:hover .formControl {
+  border-color: #bd965f; /* Thêm hiệu ứng hover cho trường nhập */
+  box-shadow: 0 0 5px rgba(189, 150, 95, 0.5);
+}
+
+.inputWithIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 10px;
+  color: #aaa;
+}
+
+.formControl {
+  padding-left: 30px; /* Để tránh chữ bị che khuất bởi biểu tượng */
+}
+
+.error {
+  border-color: red; /* Đổi màu viền khi có lỗi */
+}
+
+.displayErrors {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+.loginHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(45deg, #ffffff, #ffffff); /* Gradient nền đẹp mắt */
+  border-radius: 10px;
+}
+
+
+
+.icon {
+  font-size: 30px;
+  color: rgb(18, 13, 13);
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.iconAnimate {
+  animation: bounce 1.5s infinite ease-in-out; /* Đưa hiệu ứng nhấp nhô */
+}
+
+.headerText {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(10, 5, 5);
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.headerTextAnimate {
+  animation: slideIn 1.5s forwards; /* Đưa hiệu ứng trượt vào */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.formInput {
+  margin-top: 20px;
+}
+

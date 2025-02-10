@@ -1,0 +1,157 @@
+body {
+    background: #f5f1f1; /* Màu nền tối cho body */
+}
+
+.outer-div {
+    background: #f5f1f1; /* Màu nền tối cho div ngoài */
+    padding: 2rem; /* Khoảng cách bên trong */
+    min-height: 80vh; /* 100% chiều cao màn hình */
+}
+
+ .create-update :global(.container) {
+    background: white; /* Màu nền trắng cho div bên trong */
+    border-radius: 10px; /* Bo tròn các góc */
+    padding: 2rem; /* Khoảng cách bên trong cho container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng nổi */
+    min-height: 100vh; /* 100% chiều cao màn hình */
+
+}
+
+.custom-file-input {
+    display: none;
+}
+
+.custom-file-label {
+    display: inline-block;
+    padding: 0.375rem 1.25rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    cursor: pointer; /* Con trỏ hình bàn tay */
+    width: 100%;
+    background-color: gainsboro;
+    text-align: center;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px dashed #c6c6c6;
+}
+
+.span1 {
+    font-size: 80%;
+    color: grey;
+}
+
+.create-update :global(.nav-link) {
+    display: block; /* Hiển thị theo khối */
+    padding: 10px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo góc */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.create-update :global(.nav-link:hover) {
+    transform: translateY(-5px);
+    background-color: #e2e6ea; /* Màu nền khi hover */
+    color: grey;
+}
+
+.create-update :global(.nav-link.active) {
+    color: inherit; /* Màu chữ khi chọn */
+    font-size: 100%;
+    border-radius: 0px;
+    border-bottom: #000000 solid;
+}
+
+.create-update :global(.nav-link) {
+    color: grey;
+    font-size: 80%;
+}
+.btn-hover:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+    transform: scale(1.05);   /* Phóng to nhẹ nút */
+    transition: all 0.01s ease; /* Hiệu ứng chuyển động mượt */
+}
+.edit-hover {
+    color: #bd965f;
+    font-size: 25px;
+}
+.create-update :global(.form-select) {
+    background-color: white; /* Màu nền cho input */
+    border-radius: 10px; /* Bo tròn các góc */
+    padding: 0.375rem 0.75rem; /* Padding cho input */
+    transition: border-color 0.15s ease-in-out; /* Hiệu ứng chuyển mượt cho border */
+}
+
+.create-update :global(.form-select:focus) {
+    border-color: #bd965f; /* Đổi màu border khi focus (sử dụng màu bạn muốn) */
+    outline: none; /* Bỏ outline mặc định */
+    box-shadow: 0 0 0 0.2rem #c79f64; /* Hiệu ứng đổ bóng khi focus */
+}
+
+.form-input-custom {
+    background-color: white; /* Màu nền cho input */
+    padding: 0.375rem 0.75rem; /* Padding cho input */
+    transition: border-color 0.15s ease-in-out; /* Hiệu ứng chuyển mượt cho border */
+}
+
+.form-input-custom:focus {
+    border-color: #bd965f; /* Đổi màu border khi focus (sử dụng màu bạn muốn) */
+    outline: none; /* Bỏ outline mặc định */
+    box-shadow: 0 0 0 0.2rem #c79f64; /* Hiệu ứng đổ bóng khi focus */
+}
+.create-update :global(.dropdown-menu) {
+    background-color: #f8f9fa; /* Màu nền danh sách */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    width: 95%;
+}
+.create-update :global(.dropdown-item) {
+    padding: 10px 20px;
+    color: #333; /* Màu chữ */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.create-update :global(.dropdown-item:hover) {
+    background-color: #bd965f; /* Màu nền khi hover */
+    color: white;
+}
+.select-container {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.select-container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-appearance: none; /* Tắt kiểu mặc định của trình duyệt trên macOS và iOS */
+    -moz-appearance: none; /* Tắt kiểu mặc định trên Firefox */
+    appearance: none; /* Tắt kiểu mặc định trên các trình duyệt khác */
+}
+
+/* Mũi tên dropdown */
+.select-container::after {
+    content: '▼';
+    font-size: 18px;
+    color: #ccc;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Tùy chỉnh option */
+.select-container option {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.select-container option:hover {
+    background-color: #bd965f; /* Màu nền khi hover */
+    color: white;
+}

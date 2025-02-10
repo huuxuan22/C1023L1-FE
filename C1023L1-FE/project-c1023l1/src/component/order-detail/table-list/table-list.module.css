@@ -1,0 +1,65 @@
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột */
+    gap: 20px; /* Khoảng cách giữa các item */
+    padding: 15px; /* Padding cho container */
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer; /* Đổi kiểu con trỏ chuột */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cardImageContainer {
+    width: 100%;
+    height: 150px; /* Điều chỉnh chiều cao của hình ảnh */
+    margin-bottom: 10px;
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo hình ảnh phủ đầy vùng chứa mà không bị biến dạng */
+    border-radius: 8px;
+  }
+  
+  .cardButton {
+    background-color: #6c4f3d; /* Màu nâu */
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+  }
+  
+  .cardButton:hover {
+    background-color: #f9a825; /* Màu vàng khi hover */
+    transform: scale(1.05);
+  }
+  
+  .cardTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cardText {
+    font-size: 14px;
+    color: #777;
+  }
+  

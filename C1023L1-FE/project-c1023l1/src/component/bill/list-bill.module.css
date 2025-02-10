@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+.outer-container {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.header-container {
+    padding: 10px;
+    background-color: #f1f3f5;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.header-container h2 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.search-box label {
+    margin-right: 10px;
+    color: #333; /* Màu chữ cho label */
+}
+.search-box input {
+    border: 1px solid #ddd; /* Viền mỏng màu xám nhạt */
+    height: 25px;
+    padding: 0 15px; /* Căn chỉnh nội dung trong ô */
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+.search-box input:focus {
+    border-color: #d4a373; /* Thay đổi màu viền khi chọn */
+    box-shadow: 0 0 5px rgba(212, 163, 115, 0.5); /* Hiệu ứng đổ bóng khi chọn */
+}
+.search-box button {
+    border-radius: 25px; /* Tạo viền bo tròn */
+    background-color: #d4a373;
+    color: white;
+    height: 40px;
+    border: none;
+    padding: 10px 20px;
+    min-width: 130px; /* Tăng chiều rộng tối thiểu để chứa đủ chữ */
+}
+.btn-add {
+    background-color: #d4a373;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.btn-add i {
+    margin-right: 8px;
+}
+.table th {
+    background-color: #DCDCDC;
+    color: #A1A3A3;
+    font-size: 14px;
+}
+.table td, .table th {
+    text-align: center;
+    vertical-align: middle;
+}
+.table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px; /* Kích thước chữ vừa phải */
+    color: #A1A3A3; /* Màu chữ */
+}
+.page-input {
+    border: 1px solid #ddd; /* Viền cho ô input */
+    border-radius: 5px; /* Bo góc ô input */
+    height: 30px; /* Chiều cao của ô input */
+    width: 40px; /* Chiều rộng của ô input */
+    text-align: center; /* Căn giữa nội dung trong ô */
+    margin: 0 10px; /* Khoảng cách hai bên của ô input */
+    color: #333; /* Màu chữ của input */
+}
+.pagination {
+    margin-bottom: 0; /* Đặt margin dưới về 0 để phù hợp với input */
+}
+.pagination .page-item {
+    margin: 0 2px; /* Khoảng cách giữa các mục phân trang */
+}
+.pagination .page-link {
+    border-radius: 5px; /* Bo tròn các góc */
+    padding: 4px 10px; /* Kích thước ô phân trang */
+    border: 1px solid #ddd; /* Viền nhạt */
+    color: #A1A3A3; /* Màu chữ cho các nút */
+    min-width: 80px; /* Kích thước tối thiểu để vừa với chữ */
+    text-align: center; /* Căn giữa nội dung */
+}
+.pagination .page-item.active .page-link {
+    background-color: #d4a373; /* Màu nền khi được chọn */
+    border-color: #d4a373; /* Màu viền khi được chọn */
+    color: white; /* Màu chữ khi được chọn */
+}
+.pagination .page-item.disabled .page-link {
+    color: #aaa; /* Màu chữ cho trạng thái bị vô hiệu hóa */
+    pointer-events: none; /* Không thể click vào các link bị disabled */
+}
+.pagination .page-link:hover {
+    background-color: #f1f1f1; /* Hiệu ứng khi hover */
+    border-color: #ddd; /* Giữ nguyên màu viền khi hover */
+}
+.btn-action {
+    border: none;
+    background: transparent;
+    color: black; /* Đổi màu thành đen cho icon mắt */
+    font-size: 18px;
+}

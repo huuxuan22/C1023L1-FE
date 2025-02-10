@@ -1,0 +1,73 @@
+/* styles.css */
+.verify-code-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Nền mờ đục cho overlay */
+  }
+
+  .error-message {
+    color: white;
+    background-color: #ff4d4f; /* Màu nền nổi bật */
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0px 4px 6px rgba(219, 11, 11, 0.949); /* Đổ bóng */
+    animation: slideUp 0.5s ease-in-out, vibrate 0.5s ease-in-out, scaleUp 0.3s ease; /* Thêm hiệu ứng lướt, rung, và phóng to */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+  }
+  
+  /* Hiệu ứng mờ dần khi ẩn */
+  .hidden {
+    opacity: 0;
+  }
+  
+  /* Hiệu ứng lướt từ dưới lên */
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Hiệu ứng rung lặp */
+  @keyframes vibrate {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-2px);
+    }
+    50% {
+      transform: translateX(2px);
+    }
+    75% {
+      transform: translateX(-2px);
+    }
+  }
+  
+  /* Hiệu ứng phóng to */
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.9);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  

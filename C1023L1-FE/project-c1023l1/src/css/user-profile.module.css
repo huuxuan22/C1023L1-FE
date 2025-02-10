@@ -1,0 +1,200 @@
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: -15px;
+    margin-right: -15px;  
+  }
+  
+  [class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+ 
+  .col1 { width: 8.33%; }  /* 1 cột chiếm 8.33% của hàng */
+  .col2 { width: 16.66%; } /* 2 cột chiếm 16.66% của hàng */
+  .col3 { width: 25%; }    /* 3 cột chiếm 25% của hàng */
+  .col4 { width: 33.33%; } /* 4 cột chiếm 33.33% của hàng */
+  .col5 { width: 41.66%; } /* 5 cột chiếm 41.66% của hàng */
+  .col6 { width: 50%; }    /* 6 cột chiếm 50% của hàng */
+  .col7 { width: 58.33%; } /* 7 cột chiếm 58.33% của hàng */
+  .col8 { width: 66.66%; } /* 8 cột chiếm 66.66% của hàng */
+  .col9 { width: 75%; }    /* 9 cột chiếm 75% của hàng */
+  .col10 { width: 83.33%; }/* 10 cột chiếm 83.33% của hàng */
+  .col11 { width: 91.66%; }/* 11 cột chiếm 91.66% của hàng */
+  .col12 { width: 100%; }
+
+
+  .avatar {
+    width: 200px;
+    height: 200px;  /* Chiều cao của avatar */
+    border-radius: 50%; /* Tạo ảnh tròn */
+    overflow: hidden;   /* Ẩn phần thừa nếu ảnh không vừa với kích thước */
+    background-color: #f0f0f0; 
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;    
+    margin-bottom: 10px;
+  }
+
+  .btnUploadImgae button {
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .btnUploadImgae button:hover {
+    background-color: #cecebe;
+  }
+
+  .avatarImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .formGroup label,
+    .inputGroup label {
+    display: block;
+    text-align: left;
+    margin-left: 80px;
+    color: #a1a3a3; /* Màu nhãn: xám nhạt */
+}
+
+.formGroup input,
+.inputGroup input {
+    width: 50%;
+    padding: 7px;
+    border: 1px solid #a1a3a3; /* Màu viền input: xám đậm */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+    pointer-events: none;  /* Vô hiệu hóa mọi tương tác */
+    caret-color: transparent;
+}
+
+.formGroup input:focus,
+.inputGroup input:focus {
+    border-color: #bd965f; /* Đổi màu viền khi focus */
+    outline: none;
+}
+
+.userProfileContainer {
+  display: grid;
+  place-items: center;
+  height: 90vh;
+}
+
+
+
+.userBox {
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+text-align: center;
+width: 90%;
+}
+
+.btnChange button {
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #D5C8A0;
+    margin-top: 40px;
+}
+
+
+.btnChange button:hover {
+    background-color: #57412B;
+    color: white;
+}
+/* #57412B */
+/* #D5C8A0 */
+.logout {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.logout button {
+    position: absolute;
+    bottom: 0;  
+    right: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #D5C8A0;
+    margin-top: 40px;
+}
+
+.logout button:hover {
+    background-color: #57412B;
+    color: white;
+
+}
+
+.iconLogout {
+    margin-left: 20px;
+}
+
+.addAddress {
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: rgb(186, 181, 181);
+}
+
+.addAddress:hover {
+    background-color: white;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(191, 178, 178);
+    color: rgb(65, 59, 59);;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.card:hover {
+    color: #dc9956;
+    cursor: pointer;
+    border: 1px solid #dc9956;
+}
+
+
+.promotion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(191, 178, 178);
+    color: rgb(65, 59, 59);;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.promotion:hover {
+    color: #dc9956;
+    cursor: pointer;
+    border: 1px solid #dc9956;
+}
+
+
+.purchased {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(191, 178, 178);
+    color: rgb(65, 59, 59);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.purchased:hover {
+    color: #dc9956;
+    cursor: pointer;
+    border: 1px solid #dc9956;
+}

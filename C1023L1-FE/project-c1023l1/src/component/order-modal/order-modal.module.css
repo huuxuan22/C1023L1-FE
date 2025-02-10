@@ -1,0 +1,67 @@
+/* order-modal.module.css */
+
+/* Các lớp CSS cho modal */
+.modalContent {
+    background-color: #f5f5f5; /* Màu nền sáng, nhẹ nhàng */
+    border-radius: 10px; /* Góc bo tròn */
+    border: 2px solid #6c4f3d; /* Viền màu nâu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  }
+  
+  .modalHeader {
+    background-color: #6c4f3d; /* Nền màu nâu đậm */
+    color: #fff; /* Chữ trắng */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .modalTitle {
+    font-family: 'Roboto', sans-serif; /* Chọn font hiện đại nhưng vẫn thanh lịch */
+    font-size: 24px;
+  }
+  
+  .modalBody {
+    text-align: center;
+    font-size: 16px;
+    color: #333; /* Màu chữ tối */
+    font-family: 'Arial', sans-serif; /* Chọn font dễ đọc */
+    padding: 20px;
+  }
+  
+  .modalFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  .button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển động khi hover */
+  }
+  
+  .button:hover {
+    transform: scale(1.05); /* Phóng to nút khi hover */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .primary {
+    background-color: #f9a825; /* Màu vàng ấm */
+    border: none;
+    color: #fff;
+  }
+  
+  .secondary {
+    background-color: #6c4f3d; /* Màu nâu */
+    border: none;
+    color: #fff;
+  }
+  
+  .modalImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  

@@ -1,0 +1,155 @@
+.changPasswordContainer {
+    background-color: #f0f0f0;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+      
+  }
+  .changeBox {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 600px;
+    position: relative;
+  }
+  
+  .formGroup label,
+  .inputGroup label {
+  display: block;
+  text-align: left;
+  color: #a1a3a3;
+  transform: translateX(20%);
+   /* Màu nhãn: xám nhạt */
+  }
+  
+  .formGroup input,
+  .inputGroup input {
+  width: 40%;
+  padding: 7px;
+  border: 1px solid #a1a3a3; /* Màu viền input: xám đậm */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+  }
+  
+  .formGroup input:focus,
+  .inputGroup input:focus {
+  border-color: #bd965f; /* Đổi màu viền khi focus */
+  outline: none;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    }
+    
+  
+  .borderForm {
+  }
+  .forgotPassword {
+    position: absolute;
+    right: 0;
+    margin-right: 110px;
+    display: block;
+  }
+  
+  
+  .btnSubmit {
+    background-color: #23c711;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin-top: 50px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btnSubmit:hover {
+    color: #191b1d;
+    background-color: #6acc54; /* Thay đổi màu nền khi hover */
+  }
+  
+  .btnSubmit:hover .borderForm {
+    box-shadow: 0px 8px 20px #6acc54; /* Thay đổi box-shadow khi hover */
+  }
+  
+  .displayErrors {
+    transform: translateX(30%);
+    font-size: 15px;
+    width: 60%;
+    display: block;
+    text-align: left;
+    color: rgb(208, 99, 99);
+    opacity: 0; 
+    margin-left: 30px;
+    animation: fadeIn 0.3s forwards; 
+    }
+  
+    .formControl.error {
+      border: 2px solid rgb(208, 99, 99); /* Đường viền màu đỏ khi có lỗi */
+      animation: shake 0.3s ease; /* Hiệu ứng rung lắc */
+      }
+  
+      .formControl:focus {
+        border-color: #ced4da; /* Đặt màu viền khi focus giống như màu viền mặc định */
+        box-shadow: none; /* Loại bỏ bóng đổ mặc định */
+        color: #495057; /* Màu chữ khi focus */
+        background-color: #fff; /* Màu nền khi focus */
+        border-color: rgba(161, 163, 163, 0.5); /* Màu viền khi focus */
+        outline: 0; /* Loại bỏ viền ngoài khi focus */
+        box-shadow: 0 0 0 0.2rem #a1a3a3; /* Bóng đổ khi focus */
+        }
+  
+        .showErrors {
+          color: rgb(208, 99, 99);
+          opacity: 1; /* Đảm bảo rằng lỗi hiển thị ngay lập tức */
+          margin-top: 5px;
+          font-size: 15px;
+          margin-left: 30px;
+          align-items: center;
+          }
+          
+          @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+          }
+  
+  .formGroup input,
+  .inputGroup input {
+  width: 60%;
+  padding: 7px;
+  border: 1px solid #a1a3a3; /* Màu viền input: xám đậm */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+  margin-left: 30px;
+  }
+  
+  .btnGetout {
+    background-color: #bd965f;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-right: 60px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btnGetout:hover {
+    background-color: #bfa075;
+    color: #191b1d;
+  }
+      
+  
+  

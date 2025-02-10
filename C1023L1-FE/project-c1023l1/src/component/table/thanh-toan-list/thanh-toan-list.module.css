@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    width: 100%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.labelHeader {
+    flex-grow: 1;
+    margin-left: 50px;
+}
+
+.search {
+    padding-right: 10px;
+}
+.nav_menu {
+    height: 100%;
+}
+
+.nav_menu li {
+    list-style: none;
+}
+
+.sidebar {
+    height: 200px;
+    padding: 10px;
+    justify-items: center;
+}
+
+.card-columns {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.pagination-container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.content {
+    margin: 20px 10px 10px 0;
+}
+.choose_table {
+    width: 100%;
+    padding: 10px;
+}
+.btn_choose li {
+    margin-right: 5px;
+}
+.card-img-top {
+    max-width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+body {
+    padding: 2rem;
+    background-color: #f5f1f1;
+}
+.container {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+h1 {
+    text-align: center;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.table td {
+    border: 1px solid #bd965f;
+    padding: 10px;
+    text-align: center;
+}
+.table th {
+    background-color: #dcdcdc;
+    color: #a1a3a3;
+    padding: 10px;
+    text-align: center;
+}
+
+#prev-btn, #next-btn{
+    background-color: #bd965f;
+}
+
+#pay, #renewtable {
+    color: black;
+}
+.table-hover {
+    border-collapse: collapse;
+    border: 2px solid #bd965f; /* Đường viền xung quanh bảng */
+    border-radius: 10px; /* Bo tròn góc của bảng */
+    overflow: hidden; /* Để bo tròn hoạt động */
+}
+.table-hover thead th {
+    border: none; /* Không có đường viền trên các ô tiêu đề */
+}
+.table-hover tbody td {
+    border: none; /* Không có đường viền cho các ô */
+}
+.table-hover {
+    margin: 20px 0; /* Khoảng cách trên và dưới bảng */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.pagination button {
+    border-radius: 10px; /* Bo tròn nút */
+    border: none; /* Xóa viền */
+    background-color: #bd965f; /* Màu nền nút */
+    color: white; /* Màu chữ nút */
+    padding: 10px 15px; /* Khoảng cách bên trong */
+    margin: 0 5px; /* Khoảng cách giữa các nút */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+.pagination button:hover {
+    background-color: #a77b4a; /* Màu nền khi hover */
+}
+#page-input {
+    border-radius: 10px; /* Bo tròn ô nhập số */
+    text-align: center; /* Canh giữa nội dung */
+    padding: 5px; /* Khoảng cách bên trong */
+    border: none;
+}
+.navbar {
+    border-radius: 10px; /* Bo tròn góc của navbar */
+    background-color: #f8f9fa; /* Màu nền của navbar */
+    padding: 10px; /* Thêm khoảng cách bên trong */
+}
+.navbar-nav .nav-link {
+    color: #000; /* Màu chữ cho các liên kết trong navbar */
+}
+.navbar-nav .nav-link:hover {
+    color: #0056b3; /* Màu chữ khi hover */
+    background-color: rgba(0, 86, 179, 0.1); /* Màu nền khi hover */
+    border-radius: 10px; /* Bo tròn cho các liên kết khi hover */
+}
+
+.no-border {
+    border: none; /* Xóa đường viền */
+    outline: none; /* Xóa outline nếu có */
+    border-radius: 5px;
+}
+.nav-link {
+    display: block; /* Hiển thị theo khối */
+    padding: 10px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo góc */
+    color: grey;
+    font-size: 80%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: translateY(-5px);
+    background-color: #e2e6ea; /* Màu nền khi hover */
+    color: grey;
+}
+.nav-link.active {
+    color: inherit; /* Màu chữ khi chọn */
+    font-size: 100%;
+    border-radius: 0px;
+    border-bottom: #000000 solid;
+}
+
+.nav {
+    display: flex; /* Đảm bảo tất cả nằm trên cùng một dòng */
+    flex-wrap: wrap; /* Cho phép xuống dòng nếu cần */
+}
+
+.nav-link {
+    margin-right: 15px; /* Thêm khoảng cách giữa các mục */
+}

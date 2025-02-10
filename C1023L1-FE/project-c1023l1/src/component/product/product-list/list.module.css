@@ -1,0 +1,151 @@
+/* Trang 1 */
+
+
+body {
+    background: #f5f1f1; /* Màu nền tối cho body */
+}
+
+.outer-div-1 {
+    background: #f5f1f1; /* Màu nền tối cho div ngoài */
+    padding: 2rem; /* Khoảng cách bên trong */
+}
+
+.container-1 {
+    background: white; /* Màu nền trắng cho div bên trong */
+    border-radius: 10px; /* Bo tròn các góc */
+    padding: 2rem; /* Khoảng cách bên trong cho container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng nổi */
+}
+
+.title-1 th {
+    background-color: #dcdcdc;
+    border-bottom: none;
+}
+
+.title-1 th:first-child {
+    border-top-left-radius: 10px; /* Bo tròn góc trái trên */
+    border-bottom-left-radius: 10px; /* Bo tròn góc trái dưới */
+}
+
+.title-1 th:last-child {
+    border-top-right-radius: 10px; /* Bo tròn góc phải trên */
+    border-bottom-right-radius: 10px; /* Bo tròn góc phải dưới */
+}
+
+.list :global(.nav-tabs .nav-link.active) {
+    border-bottom: 3px solid #0d6efd; /* Đường viền cho tab đang chọn */
+}
+
+.list :global(.nav-tabs .nav-link) {
+    color: inherit; /* Kế thừa màu từ phần tử cha */
+}
+
+.filter-section-1 {
+    margin-top: 10px;
+}
+
+/*.filter-button-1 {*/
+/*    border-radius: 20px;*/
+/*    padding: 5px 15px;*/
+/*}*/
+
+/*.filter-button-1.active {*/
+/*    background-color: #f5f5f5;*/
+/*}*/
+
+.search-input-1 {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.view-options-1 {
+    display: flex;
+    align-items: center;
+}
+
+.view-options-1 i {
+    margin-left: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.list :global(.table ){
+    margin-top: 1rem;
+}
+
+
+.list :global(.dropdown-menu) {
+    background-color: #f8f9fa; /* Màu nền danh sách */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.list :global(.dropdown-item) {
+    padding: 10px 20px;
+    color: #333; /* Màu chữ */
+    display: flex;
+    justify-content: space-between;
+}
+
+.list :global(.dropdown-item:hover) {
+    background-color: #bd965f; /* Màu nền khi hover */
+    color: white;
+}
+
+.icon-hover-1 {
+    font-size: 25px;
+    color: #bd965f;
+    transition: color 0.01s ease;
+}
+
+.list :global(.dropdown-item:hover) .icon-hover-1 {
+    color: white;
+}
+
+h3.container-1 {
+    background-color: #d3d3d3;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-create-1:hover {
+    background-color: #a67b48; /* Màu nền khi hover */
+    color: #ffffff; /* Màu chữ khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+    transform: scale(1.05); /* Phóng to nhẹ nút */
+    transition: all 0.01s ease; /* Hiệu ứng chuyển động mượt */
+}
+
+.btn-dots-1:hover {
+    background-color: white; /* Màu nền khi hover */
+    color: #a1a3a3; /* Màu chữ khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+    transform: scale(1.05); /* Phóng to nhẹ nút */
+    transition: all 0.01s ease; /* Hiệu ứng chuyển động mượt */
+}
+
+.btn-dots-1::after {
+    display: none;
+}
+
+.btn-sort-1::after {
+    display: none;
+}
+
+.search-hover-1:focus {
+    border-color: #bd965f; /* Đổi màu border khi focus (sử dụng màu bạn muốn) */
+    outline: none; /* Bỏ outline mặc định */
+    box-shadow: 0 0 0 0.2rem #c79f64; /* Hiệu ứng đổ bóng khi focus */
+}
+.btn-page:hover {
+    background-color: #a67b48; /* Màu nền khi hover */
+    color: #ffffff; /* Màu chữ khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+    transform: scale(1.05); /* Phóng to nhẹ nút */
+    transition: all 0.01s ease; /* Hiệu ứng chuyển động mượt */
+}

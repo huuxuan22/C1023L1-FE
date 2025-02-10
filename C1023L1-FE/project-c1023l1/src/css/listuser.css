@@ -1,0 +1,5 @@
+/* Áp dụng cho tất cả các thẻ <tr> trong <tbody> */
+table tbody tr {
+    color: #dcdcdc;
+}
+

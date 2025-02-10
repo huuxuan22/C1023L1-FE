@@ -1,0 +1,64 @@
+.outer-container {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.content-chart-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Đặt chiều cao cố định cho biểu đồ */
+}
+
+#chart {
+    max-width: 100%;
+    max-height: 100%;
+}
+.header-container {
+    padding: 10px;
+    background-color: #f1f3f5;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.btn-orange {
+    border-radius: 25px;
+    background-color: #d4a373;
+    color: white;
+    height: 45px;
+    border: none;
+    padding: 10px 20px;
+    min-width: 130px;
+    text-align: center;
+}
+
+.btn-orange:hover {
+    background-color: #c89f6b; /* Màu hover */
+}
+.radio-label {
+    display: flex; /* Sử dụng flexbox để căn chỉnh */
+    align-items: center; /* Căn giữa dọc */
+    margin-bottom: 10px; /* Khoảng cách giữa các radio button */
+}
+
+.radio-label input {
+    margin-right: 10px; /* Khoảng cách giữa nút radio và chữ */
+}
+
+.radio-group {
+    margin: 20px 0;
+}
+#incomeDisplay .mb-3 > div {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Khoảng cách giữa các radio button */
+    padding: 10px 0;
+}
+#incomeDisplay label {
+    display: flex;
+    align-items: center;
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer;
+}

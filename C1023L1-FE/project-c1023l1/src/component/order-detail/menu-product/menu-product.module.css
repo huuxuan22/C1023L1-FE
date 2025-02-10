@@ -1,0 +1,252 @@
+:global {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    width: 70%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: auto;
+}
+
+.labelHeader {
+    flex-grow: 1;
+    margin-left: 50px;
+}
+
+.main {
+    border: 2px solid #000;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
+    /*width: 760px;*/
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.search {
+    padding-right: 10px;
+}
+
+.sidebar {
+    width: 200px; /* Chiều rộng cố định cho sidebar */
+    padding: 10px;
+}
+
+/* Đặt nav_menu thành flex để sắp xếp các phần tử theo cột */
+.nav_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding-right: 10px;
+}
+
+
+.categoryButton {
+    width: 100%;
+}
+
+.btnCategory {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between product items */
+    justify-content: center; /* Center-align items */
+    padding: 15px; /* Padding inside the container */
+}
+.cardColumns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    height: 400px;
+}
+
+.paginationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content {
+    margin: 20px 10px 10px 0;
+}
+
+.chooseTable {
+    width: 100%;
+    padding: 10px;
+}
+
+.btnChoose li {
+    margin-right: 5px;
+}
+
+.btn {
+    background-color: #b08d57 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.btn:hover {
+    background-color: #8c7049 !important;
+    color: white !important;
+}
+
+.cardImgTop {
+    max-width: 20%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* MenuProduct.module.css */
+
+/* Container chính để chia đôi màn hình */
+.container {
+    display: flex;
+    flex-direction: column;  /* Chuyển đổi các phần tử thành cột */
+    gap: 30px; /* Khoảng cách giữa bảng và phần bên phải */
+}
+
+/* Phần bên trái chứa bảng */
+.leftPanel {
+    flex-grow: 1; /* Làm cho phần này chiếm không gian còn lại */
+}
+
+/* Phần bên phải chứa các nút và thông tin bàn */
+.rightPanel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Adjust gap between child elements */
+    margin-top: 20px;
+    align-items: center; /* Center elements if needed */
+    margin-bottom: 240px;
+}
+
+.choose_table {
+    margin-bottom: 20px; /* Adds space between table info and buttons */
+    font-weight: bold;
+}
+
+.btn_choose {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap if necessary */
+    justify-content: space-around;
+    gap: 10px; /* Space between buttons */
+    list-style: none;
+}
+
+.btn {
+    flex-grow: 1;
+    padding: 10px;
+    max-width: 150px; /* Adjust width as needed */
+    text-align: center;
+}
+.li1 {
+    width: 48%;
+}
+
+.rightPanel > * {
+    margin-bottom: 10px;
+}
+/* Adjusting the image size to fit the card */
+.cardImgTop {
+    width: 100%;  /* Set width to 100% to make the image responsive */
+    height: auto; /* Maintain the aspect ratio of the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    max-height: 200px; /* Limit the image height to avoid it becoming too large */
+    margin: 0 auto;
+}
+
+/* Adjust card size */
+.card {
+    width: 100%; /* Allow the card to take the full width of the column */
+    height: auto; /* Let the card height adjust according to content */
+    border: 1px solid #ddd; /* Optional: add a border to the card */
+    border-radius: 10px; /* Optional: rounded corners for the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for better aesthetics */
+    overflow: hidden; /* Prevent overflow */
+    background-color: #fff; /* Set background color for the card */
+}
+
+/* Product container settings */
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between product items */
+    justify-content: space-between; /* Spread items across the container */
+    padding: 15px; /* Padding inside the container */
+}
+
+/* Ensure equal height for all cards */
+.productContainer .col-md-6 {
+    display: flex;
+    justify-content: center; /* Center the card in the column */
+}
+
+.card-body {
+    padding: 15px; /* Padding inside the card body */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.btn {
+    background-color: #b08d57 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.btn:hover {
+    background-color: #8c7049 !important;
+    color: white !important;
+}
+
+/* Pagination styles */
+.paginationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Improve overall layout within the main container */
+.main {
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
